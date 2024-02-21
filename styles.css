@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap');
+
+:root {
+    --color-body: #00778f;
+    --color-body-shadow: #004452;
+    --color-form: #e00087;
+    --color-form-shadow: #cc007a;
+    --color-input: #ff57bb;
+    --color-text: #fff4e4;
+    --color-line: #f7e8a4;
+    --color-extra: #70d6ff;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-body);
+    color: var(--color-text);
+}
+h1, p {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;;
+}
+h1 {
+    font-size: 4vw;
+    font-weight: 700;
+}
+p {
+    font-size: 2vw;
+    font-weight: 400;
+    font-style: italic;
+}
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px 5px var(--color-body-shadow);
+    background-color: var(--color-form);
+    padding: 2%;
+}
+fieldset {
+    margin-bottom: 5%;
+    border: none;
+}
+fieldset:last-of-type {
+    margin-bottom: unset;
+}
+hr {
+    border-color: var(--color-line);
+    margin: 5% auto;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-width: 2%;
+    height: 1.5rem;
+    background-color: var(--color-input);
+    box-shadow: 0 0 4px 4px var(--color-form-shadow);
+    border: 1px solid var(--color-input);
+}
+input:hover, textarea:hover, select:hover {
+    border: 1px solid var(--color-extra);
+    box-shadow: 0 0 6px 6px var(--color-form-shadow);
+}
+input[type="radio"], input[type="checkbox"]  {
+    margin: unset;
+    width: unset;
+    min-height: unset;
+    vertical-align: middle;
+    box-shadow: unset;
+    accent-color: var(--color-extra);
+}
+input[type="radio"]:hover, input[type="checkbox"]:hover {
+    border-color: var(--color-body-shadow);
+}
+::placeholder {
+    color: var(--color-line);
+}
+select option {
+    color: var(--color-line);
+}
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 2rem;
+}

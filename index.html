@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Drawing survey</h1>
+    <p id="description">Brief survey on preferences regarding drawing techniques</p>
+    <form action="#" method="post" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name: <input type="text" id="name" name="name" required placeholder="Enter your name"></label>
+            <label for="email" id="email-label">Email: <input type="email" id="email" name="email" required placeholder="Enter your email"></label>
+            <label for="number" id="number-label">Age (years): <input type="number" id="number" name="number" min="12" max="100" required placeholder="Enter your age"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Drawing preferences</legend>
+            <label for="type-of-artist"> What type of artist are you? 
+                <select name="type-of-artist" id="dropdown">
+                    <option value="">Select an option:</option>
+                    <option value="1">non artist</option>
+                    <option value="2">begginer</option>
+                    <option value="3">intermediate level</option>
+                    <option value="4">expert</option>
+                </select>
+            </label>
+            <hr>
+            <legend>Preferred surfaces</legend>
+            <label for="paper"><input value="paper" type="radio" name="surfaces" checked /> Paper</label>
+            <label for="canvas"><input value="canvas" type="radio" name="surfaces"/> Canvas</label>
+            <label for="wood"><input value="wood" type="radio" name="surfaces"/> Wood</label>
+            <label for="wall-floor"><input value="wall-floor" type="radio" name="surfaces"/> Wall/floor</label>
+            <label for="other"><input value="other" type="radio" name="surfaces"/> Other</label>
+            <hr>
+            <legend>Preferred materials</legend>
+            <label>
+                <input type="checkbox" name="materials" value="pencil">
+                Pencil
+            </label>
+            <label>
+                <input type="checkbox" name="materials" value="charcoal">
+                Charcoal
+            </label>
+            <label>
+                <input type="checkbox" name="materials" value="watercolor">
+                Watercolor
+            </label>
+            <label>
+                <input type="checkbox" name="materials" value="acrylic-paint">
+                Acrilic-paint
+            </label>
+            <label>
+                <input type="checkbox" name="materials" value="oil-painting">
+                Oil-painting
+            </label>
+            <label>
+                <input type="checkbox" name="materials" value="other">
+                Other
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="comment"> Comments: 
+                <textarea name="comments" id="comments" cols="30" rows="3" placeholder="leave your comment here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit">
+    </form>
+    
+</body>
+</html>
